@@ -11,4 +11,12 @@ III. Partial Differential Equations: Review of Laplace, diffusion and wave equat
 
 IV. Sturm-Liouville Theory: Applications to solutions of boundary value problems in spherical and cylindrical coordinates, generalizations. Legendre polynomials and Bessel functions. 
 
+The aforementioned topics were not closely followed in my semester- nor were they in the listed order. I have thus attempted to make a more accurate outline pertaining to the subjects and topics covered. Every "chapter" in this outline has a corresponding set of notes (or will so, once I finish transcribing and uploading them).
+
+1. **Partial Differential Equations in Engineering** 
+2. **Boundary Value Problems**
+3. **Inner Product Spaces**
+4. **Linear Algebra**
+5. **Sturm-Liouville Boundary Value Problems**
+
 *NB: The majority of the notes were written by hand (Goodnotes) and then transcribed into LaTeX through the use of automated software. Although I did attempt to manually correct any errors in the transcription, it is possible that I have missed some. Figures may also be missing. If you want a copy of the original handwritten notes, create a pull request with your email and desired sections and I will send it to you.*
