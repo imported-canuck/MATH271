@@ -19,4 +19,4 @@ The aforementioned topics were not closely followed in my semester- nor were the
 4. **Linear Algebra**
 5. **Sturm-Liouville Boundary Value Problems**
 
-*NB: The majority of the notes were written by hand (Goodnotes) and then transcribed into LaTeX through the use of automated software. Although I did attempt to manually correct any errors in the transcription, it is possible that I have missed some. Figures may also be missing. If you want a copy of the original handwritten notes, create a pull request with your email and desired sections and I will send it to you.*
+*NB: The majority of the notes were written by hand (Goodnotes) and then transcribed into LaTeX through the use of automated software. Although I did attempt to manually correct any errors in the transcription, it is possible that I have missed some. Figures may also be missing. If you want a copy of the original handwritten notes, create a pull request with your email and desired sections and I will send it to you. I am also human. I may have made mistakes, applied unsound logic, and omitted material. When in doubt, consult with the professor or TAs*
