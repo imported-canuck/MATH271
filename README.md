@@ -30,7 +30,7 @@ My notes are split into five sections, as outlined below. Every section below ha
 **2. Boundary Value Problems.**  
 &nbsp;&nbsp;&nbsp;&nbsp;2.1. BVP 1(A): Diffusion of Heat in a Thin Bar, Ends Maintained at 0&deg;   
 &nbsp;&nbsp;&nbsp;&nbsp;2.2. BVP 1(B): Diffusion of Heat in a Thin Bar, Ends Insulated  
-&nbsp;&nbsp;&nbsp;&nbsp;2.3. BVP 2: Vibrating String
+&nbsp;&nbsp;&nbsp;&nbsp;2.3. BVP 2: Vibrating String  
 &nbsp;&nbsp;&nbsp;&nbsp;2.4. Newton's Law of Heating and Cooling  
 &nbsp;&nbsp;&nbsp;&nbsp;2.5. BVP 3: Steady-State Temperature in Rectangular Regions  
 &nbsp;&nbsp;&nbsp;&nbsp;2.6. BVP 4: Steady-State Temperature in Circular Regions  
