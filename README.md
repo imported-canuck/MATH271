@@ -52,8 +52,31 @@ My notes are split into five sections, as outlined below. Every section below ha
 **3. Inner Product Spaces.**  
 
 **4. Linear Algebra.**  
-&nbsp;&nbsp;&nbsp;&nbsp;4.1.  
+&nbsp;&nbsp;&nbsp;&nbsp;4.1. Linear Dependence and Independence  
+&nbsp;&nbsp;&nbsp;&nbsp;4.2. Wronskian  
+&nbsp;&nbsp;&nbsp;&nbsp;4.3. Dimension and Basis  
+&nbsp;&nbsp;&nbsp;&nbsp;4.4. Linear Operators  
+&nbsp;&nbsp;&nbsp;&nbsp;4.5. Null Spaces  
+&nbsp;&nbsp;&nbsp;&nbsp;4.6. Gram-Schmidt Process  
+&nbsp;&nbsp;&nbsp;&nbsp;4.7. Eigenvalues/Eigenvectors of Differential Equations  
+&nbsp;&nbsp;&nbsp;&nbsp;4.8. Hermitian Operators  
+&nbsp;&nbsp;&nbsp;&nbsp;4.9. Parseval's Theorem  
 
-**5. Sturm-Liouville Boundary Value Problems.**
+**5. Sturm-Liouville Boundary Value Problems.**  
+&nbsp;&nbsp;&nbsp;&nbsp;5.1. Introduction to Sturm-Liouville Equations  
+&nbsp;&nbsp;&nbsp;&nbsp;5.2. Sturm-Liouville Theorem  
+&nbsp;&nbsp;&nbsp;&nbsp;5.3. Sturm-Liouville BVPs  
+&nbsp;&nbsp;&nbsp;&nbsp;5.4. Legendre Polynomials  
+&nbsp;&nbsp;&nbsp;&nbsp;5.5. BVP 9: Steady-State Temperature in Spherical Regions  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.5.1 BVP 9a: Interior of a Sphere  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.5.2 BVP 9b: Exterior of a Sphere  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.5.3 BVP 9c: Cocentric Spheres  
+&nbsp;&nbsp;&nbsp;&nbsp;5.6. BVP 10: Steady-State Temperature in Cylindrical Regions  
+&nbsp;&nbsp;&nbsp;&nbsp;5.7. BVP 11(A): Diffusion of Heat in a Circular Plate  
+&nbsp;&nbsp;&nbsp;&nbsp;5.8. BVP 11(B): Vibrating Circular Membrane  
+&nbsp;&nbsp;&nbsp;&nbsp;5.9. BVP 12: Diffusion of Heat in a Sphere  
+&nbsp;&nbsp;&nbsp;&nbsp;5.10. BVP 13: Steady-State Temperature in an Annualar Semicircle  
+&nbsp;&nbsp;&nbsp;&nbsp;~~5.11. Diffusion of Heat in a Thin Bar, Robin Boundary Conditions~~ (Omitted in my year)  
+&nbsp;&nbsp;&nbsp;&nbsp;~~5.12. Poisson's Equation in a Cylinder~~ (Omitted in my year)  
 
 *NB: The majority of the notes were written by hand (Goodnotes) and then transcribed into LaTeX through the use of automated software. Although I did attempt to manually correct any errors in the transcription, it is possible that I have missed some. Figures may also be missing. If you want a copy of the original handwritten notes, create a pull request with your email and desired sections and I will send it to you. I am also human. I may have made mistakes, applied unsound logic, and omitted material. When in doubt, consult with the professor or TAs*
