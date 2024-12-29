@@ -27,7 +27,7 @@ My notes are split into five sections, as outlined below. Every section below ha
 &nbsp;&nbsp;&nbsp;&nbsp;1.7. Solving PDEs  
 &nbsp;&nbsp;&nbsp;&nbsp;1.8. Uniqueness Theorems  
 
-**2. Boundary Value Problems.**  
+**2. Boundary Value Problems.**  General solutions of boundary value problems with seperation of variables in cartesian and polar coordinates. Particular solutions using Fourier series. Solutions of inhomogenous boundary value problems with slave functions and variation of parameters.  
 &nbsp;&nbsp;&nbsp;&nbsp;2.1. BVP 1(A): Diffusion of Heat in a Thin Bar, Ends Maintained at 0&deg;   
 &nbsp;&nbsp;&nbsp;&nbsp;2.2. BVP 1(B): Diffusion of Heat in a Thin Bar, Ends Insulated  
 &nbsp;&nbsp;&nbsp;&nbsp;2.3. BVP 2: Vibrating String  
@@ -49,9 +49,9 @@ My notes are split into five sections, as outlined below. Every section below ha
 &nbsp;&nbsp;&nbsp;&nbsp;2.9. BVP 7: 3-Variable Problems  
 &nbsp;&nbsp;&nbsp;&nbsp;2.10. BVP 8: Poisson's Equation  
 
-**3. Inner Product Spaces.**  
+**3. Inner Product Spaces.**  Inner products. Standard inner prodicuts of functions and vectors.  
 
-**4. Linear Algebra.**  
+**4. Linear Algebra.**  Review of linear algebra. Generalizations to functions and arbitrary vector spaces. The Gram-Schmidt orthogonalization process. Eigenvalues and eigenfunctions of linear operators. Conditions and consequences of Hermitian operators.  
 &nbsp;&nbsp;&nbsp;&nbsp;4.1. Linear Dependence and Independence  
 &nbsp;&nbsp;&nbsp;&nbsp;4.2. Wronskian  
 &nbsp;&nbsp;&nbsp;&nbsp;4.3. Dimension and Basis  
@@ -62,7 +62,7 @@ My notes are split into five sections, as outlined below. Every section below ha
 &nbsp;&nbsp;&nbsp;&nbsp;4.8. Hermitian Operators  
 &nbsp;&nbsp;&nbsp;&nbsp;4.9. Parseval's Theorem  
 
-**5. Sturm-Liouville Boundary Value Problems.**  
+**5. Sturm-Liouville Boundary Value Problems.**  Conditions and consequences of the Strum-Liouville theorem. Solutions of boundary value problems in cylindrical and spherical coordinates using the Sturm-Liouville theorem. Legendre polynomials and Bessel functions.  
 &nbsp;&nbsp;&nbsp;&nbsp;5.1. Introduction to Sturm-Liouville Equations  
 &nbsp;&nbsp;&nbsp;&nbsp;5.2. Sturm-Liouville Theorem  
 &nbsp;&nbsp;&nbsp;&nbsp;5.3. Sturm-Liouville BVPs  
