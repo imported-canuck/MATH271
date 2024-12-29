@@ -39,10 +39,21 @@ My notes are split into five sections, as outlined below. Every section below ha
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.6.3. BVP 4c: Annular Regions  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.6.4. BVP 4d: Flow Around a Long Circular Cylinder  
 &nbsp;&nbsp;&nbsp;&nbsp;2.7. BVP 5: Time-Indepedent Non-Homogenous Aspects  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.7.1 BVP 5a:  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.7.1. BVP 5a: Diffusion of Heat in a Thin Bar, Ends Maintained at β&deg; and γ&deg;   
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.7.2. BVP 5b: Heat Generation/Absorption in a Thin Bar  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.7.3. BVP 5c: Vibrating String with Gravity  
+&nbsp;&nbsp;&nbsp;&nbsp;2.8. BVP 6: Time-Dependent Non-Homogenous Aspects  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.8.1. BVP 6a: Generalized Diffusion, ends at 0&deg;  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.8.2. BVP 6b: Generalized Diffusion, Dirichlet B.C.s Function of Time  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.8.2. BVP 6b: Generalized Diffusion, Neumann B.C.s Function of Time  
+&nbsp;&nbsp;&nbsp;&nbsp;2.9. BVP 7: 3-Variable Problems  
+&nbsp;&nbsp;&nbsp;&nbsp;2.10. BVP 8: Poisson's Equation  
 
-**3. Inner Product Spaces.**
-**4. Linear Algebra.**
+**3. Inner Product Spaces.**  
+
+**4. Linear Algebra.**  
+&nbsp;&nbsp;&nbsp;&nbsp;4.1.  
+
 **5. Sturm-Liouville Boundary Value Problems.**
 
 *NB: The majority of the notes were written by hand (Goodnotes) and then transcribed into LaTeX through the use of automated software. Although I did attempt to manually correct any errors in the transcription, it is possible that I have missed some. Figures may also be missing. If you want a copy of the original handwritten notes, create a pull request with your email and desired sections and I will send it to you. I am also human. I may have made mistakes, applied unsound logic, and omitted material. When in doubt, consult with the professor or TAs*
