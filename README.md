@@ -76,7 +76,7 @@ My notes are split into five sections, as outlined below. Every section below ha
 &nbsp;&nbsp;&nbsp;&nbsp;5.8. BVP 11(B): Vibrating Circular Membrane  
 &nbsp;&nbsp;&nbsp;&nbsp;5.9. BVP 12: Diffusion of Heat in a Sphere  
 &nbsp;&nbsp;&nbsp;&nbsp;5.10. BVP 13: Steady-State Temperature in an Annualar Semicircle  
-&nbsp;&nbsp;&nbsp;&nbsp;~~5.11. Diffusion of Heat in a Thin Bar, Robin Boundary Conditions~~ (Omitted in my year)  
-&nbsp;&nbsp;&nbsp;&nbsp;~~5.12. Poisson's Equation in a Cylinder~~ (Omitted in my year)  
+&nbsp;&nbsp;&nbsp;&nbsp;~~5.11. BVP 14: Diffusion of Heat in a Thin Bar, Robin Boundary Conditions~~ (Omitted in my year)  
+&nbsp;&nbsp;&nbsp;&nbsp;~~5.12. BVP 15: Poisson's Equation in a Cylinder~~ (Omitted in my year)  
 
 *NB: The majority of the notes were written by hand (Goodnotes) and then transcribed into LaTeX through the use of automated software. Although I did attempt to manually correct any errors in the transcription, it is possible that I have missed some. Figures may also be missing. If you want a copy of the original handwritten notes, create a pull request with your email and desired sections and I will send it to you. I am also human. I may have made mistakes, applied unsound logic, and omitted material. When in doubt, consult with the professor or TAs*
