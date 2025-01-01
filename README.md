@@ -9,10 +9,10 @@ If you are a Mechanical Engineering undergrad at McGill taking this class, MATH 
 
 If you are an external individual, the following is a rough list of necessary prerequsite knowledge. 
 - **Multivariable & Vector Calculus**  
-  You should be comfortable with partial derivatives, multiple integrals, gradients, the Laplacian operator, and infinite series (particularly Fourier series). Knowledge of vector calculus, namely divergence, curl, flux, line and surfance integrals, scalar & vector fields, Gauss' theorem, and common vector identities is highly reccomended.  
+  You should be comfortable with partial derivatives, multiple integrals, gradients, the Laplacian operator, and infinite series (particularly Fourier series). Knowledge of vector calculus, namely divergence, curl, flux, line and surfance integrals, scalar & vector fields, Gauss' theorem, and common vector identities is highly recommended.  
   
 - **Differential Equations:**  
-  Knowledge of first-order and second-order ODEs are essential. You should be able to solve first-order ODEs using seperation of variables and integrating factors. You should be able to solve second-order constant coefficient and Euler-Cauchy ODEs. Understanding how the method of undetermined coefficients and variation of parameters works is also useful but not explicitly tested. Higher order constant coefficient ODEs may appear. Seperation of variables is a reoccuring theme, and you should be very comfortable with it.  
+  Knowledge of first-order and second-order ODEs are essential. You should be able to solve first-order ODEs using separation of variables and integrating factors. You should be able to solve second-order constant coefficient and Euler-Cauchy ODEs. Understanding how the method of undetermined coefficients and variation of parameters works is also useful but not explicitly tested. Higher order constant coefficient ODEs may appear. Separation of variables is a reoccuring theme, and should be well-understood. 
 
 - **Linear Algebra:**  
   Familiarity with matrix algebra, determinants, and row reduction is useful, alongside the concepts of linear dependence and independence. An understanding on what eigenvalues and eigenvectors represent will be very useful, but is not required. Likewise, concepts of vector spaces, inner products, linear operators, basis, dimension, null space, and rank are good to know, but will be reviewed.
@@ -31,7 +31,7 @@ My notes are split into five sections, as outlined below. Every section below ha
 &nbsp;&nbsp;&nbsp;&nbsp;1.7. Solving PDEs  
 &nbsp;&nbsp;&nbsp;&nbsp;1.8. Uniqueness Theorems  
 
-**2. Boundary Value Problems.**  General solutions of boundary value problems with seperation of variables in cartesian and polar coordinates. Particular solutions using Fourier series. Solutions of inhomogenous boundary value problems with slave functions and variation of parameters.  
+**2. Boundary Value Problems.**  General solutions of boundary value problems with separation of variables in cartesian and polar coordinates. Particular solutions using Fourier series. Solutions of inhomogenous boundary value problems with slave functions and variation of parameters.  
 &nbsp;&nbsp;&nbsp;&nbsp;2.1. BVP 1(A): Diffusion of Heat in a Thin Bar, Ends Maintained at 0&deg;   
 &nbsp;&nbsp;&nbsp;&nbsp;2.2. BVP 1(B): Diffusion of Heat in a Thin Bar, Ends Insulated  
 &nbsp;&nbsp;&nbsp;&nbsp;2.3. BVP 2: Vibrating String  
@@ -53,7 +53,7 @@ My notes are split into five sections, as outlined below. Every section below ha
 &nbsp;&nbsp;&nbsp;&nbsp;2.9. BVP 7: 3-Variable Problems  
 &nbsp;&nbsp;&nbsp;&nbsp;2.10. BVP 8: Poisson's Equation  
 
-**3. Inner Product Spaces.**  Inner products. Standard inner prodicuts of functions and vectors.  
+**3. Inner Product Spaces.**  Inner products. Standard inner products of functions and vectors.  
 
 **4. Linear Algebra.**  Review of linear algebra. Generalizations to functions and arbitrary vector spaces. The Gram-Schmidt orthogonalization process. Eigenvalues and eigenfunctions of linear operators. Conditions and consequences of Hermitian operators.  
 &nbsp;&nbsp;&nbsp;&nbsp;4.1. Linear Dependence and Independence  
@@ -79,14 +79,14 @@ My notes are split into five sections, as outlined below. Every section below ha
 &nbsp;&nbsp;&nbsp;&nbsp;5.7. BVP 11(A): Diffusion of Heat in a Circular Plate  
 &nbsp;&nbsp;&nbsp;&nbsp;5.8. BVP 11(B): Vibrating Circular Membrane  
 &nbsp;&nbsp;&nbsp;&nbsp;5.9. BVP 12: Diffusion of Heat in a Sphere  
-&nbsp;&nbsp;&nbsp;&nbsp;5.10. BVP 13: Steady-State Temperature in an Annualar Semicircle  
+&nbsp;&nbsp;&nbsp;&nbsp;5.10. BVP 13: Steady-State Temperature in an Annular Semicircle  
 &nbsp;&nbsp;&nbsp;&nbsp;~~5.11. BVP 14: Diffusion of Heat in a Thin Bar, Robin Boundary Conditions~~ (Omitted in my year)  
 &nbsp;&nbsp;&nbsp;&nbsp;~~5.12. BVP 15: Poisson's Equation in a Cylinder~~ (Omitted in my year)  
 
-## Notes  
+### Notes  
 These notes were originally written by hand (Goodnotes) and then transcribed into LaTeX. Parts of the transcription was done with automated software (and proofread manually) while other parts of the notes were transcribed manually in its entirety. Although I have attempted to correct any errors, it is possible that I have made errors, omissions, or have applied unsound logic. When in doubt, consult with the professor or a TA.  
 
-It should also be noted that these notes do not necessarily account to a rigiorous or complete treatment of partial differential equations. Although I have added extra details on subjects that interested me, the primary purpose of my notes were to serve as a repository of the material I needed to know in order to succeed in Roth's MATH 271 course. Nevertheless, having compared my notes with *"Applied Partial Differential Equations"* by Richard Haberman, it mostly appears to be comparable to a typical introductory PDEs course (like it's math department counterpart MATH 319 here in McGill). As MATH 271 is taken by engineering students, it is likely more applied and less theoretical than typical PDE courses.  
+It should also be noted that these notes do not necessarily account to a rigorous or complete treatment of partial differential equations. Although I have added extra details on subjects that interested me, the primary purpose of my notes were to serve as a repository of the material I needed to know in order to succeed in Roth's MATH 271 course. Nevertheless, having compared my notes with *"Applied Partial Differential Equations"* by Richard Haberman, it mostly appears to be comparable to a typical introductory PDEs course (like it's math department counterpart MATH 319 here in McGill). As MATH 271 is taken by engineering students, it is likely more applied and less theoretical than typical PDE courses.  
 
 A common complaint (one that I held for the first half of the semester) of this course is that it is too systematic– presenting a bunch of formulas to solve various BVPs rather than providing students with the high-level intuition to independently solve BVPs. This is an inevitable consequence of the nature of partial differential equations. There simply are so little cases in which a well-posed BVP has a closed-form solution, with these solutions being extremely sensitive to small changes in physical condition. Patterns are often unintuitive or nonexistent. For example, although solving Laplace's equation in 2D polar coordinates yields a conbination of basic trigonometric and exponential functions, expanding it to 3D cylindrical coordinates causes both forms of Bessel's functions to appear. Nevertheless, there are patterns and invariants present that I'm sure will interest a reader with an affinity towards math.  
 
