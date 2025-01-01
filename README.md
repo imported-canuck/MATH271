@@ -1,6 +1,7 @@
 # MATH 271
 Collection of my notes in Professor Charles Roth's MATH 271 "Linear Algebra and Partial Differential Equations" course at McGill. Taken in F2024. Both the .tex code and rendered PDFs can be found in their respective folders.
 
+## Contents  
 MATH 271 is an advanced math course taken exclusively by Mechanical Engineering majors at McGill. It roughly covers boundary value problems of various forms of the Diffusion, Wave, and Laplace's equations alongside aspects of advanced linear algebra. The official course outline is as such:
 
 **1. Partial Differential Equations**  
@@ -79,4 +80,11 @@ My notes are split into five sections, as outlined below. Every section below ha
 &nbsp;&nbsp;&nbsp;&nbsp;~~5.11. BVP 14: Diffusion of Heat in a Thin Bar, Robin Boundary Conditions~~ (Omitted in my year)  
 &nbsp;&nbsp;&nbsp;&nbsp;~~5.12. BVP 15: Poisson's Equation in a Cylinder~~ (Omitted in my year)  
 
-*NB: The majority of the notes were written by hand (Goodnotes) and then transcribed into LaTeX through the use of automated software. Although I did attempt to manually correct any errors in the transcription, it is possible that I have missed some. Figures may also be missing. If you want a copy of the original handwritten notes, create a pull request with your email and desired sections and I will send it to you. I am also human. I may have made mistakes, applied unsound logic, and omitted material. When in doubt, consult with the professor or TAs*
+## Notes  
+These notes were originally written by hand (Goodnotes) and then transcribed into LaTeX. Parts of the transcription was done with automated software (and proofread manually) while other parts of the notes were transcribed manually in its entirety. Although I have attempted to correct any errors, it is possible that I have made errors, omissions, or have applied unsound logic. When in doubt, consult with the professor or a TA.  
+
+It should also be noted that these notes do not necessarily account to a rigiorous or complete treatment of partial differential equations. Although I have added extra details on subjects that interested me, the primary purpose of my notes were to serve as a repository of the material I needed to know in order to succeed in Roth's MATH 271 course. Nevertheless, having compared my notes with *"Applied Partial Differential Equations"* by Richard Haberman, it mostly appears to be comparable to a typical introductory PDEs course (like it's math department counterpart MATH 319 here in McGill). As MATH 271 is taken by engineering students, it is likely more applied and less theoretical than typical PDE courses.  
+
+A common complaint (one that I held for the first half of the semester) of this course is that it is too systematic– presenting a bunch of formulas to solve various BVPs rather than providing students with the high-level intuition to independently solve BVPs. This is an inevitable consequence of the nature of partial differential equations. There simply are so little cases in which a well-posed BVP has a closed-form solution, with these solutions being extremely sensitive to small changes in physical condition. Patterns are often unintuitive or nonexistent. For example, although solving Laplace's equation in 2D polar coordinates yields a conbination of basic trigonometric and exponential functions, expanding it to 3D cylindrical coordinates causes both forms of Bessel's functions to appear. Nevertheless, there are patterns and invariants present that I'm sure will interest a reader with an affinity towards math.  
+
+If you notice a mistake in the notes, please send a pull request outlining the error(s) you've found and I will fix it as soon as possible. I will credit you if you wish. Please be as specific as possible with regards to the location of the error, the reason my statement is erroneous, and the proposed change as the material will not be as fresh in my mind as time passes.
