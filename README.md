@@ -2,20 +2,23 @@
 Collection of my notes in Professor Charles Roth's MATH 271 "Linear Algebra and Partial Differential Equations" course at McGill. Taken in F2024. Both the .tex code and rendered PDFs can be found in their respective folders.
 
 ## Contents  
-MATH 271 is an advanced math course taken exclusively by Mechanical Engineering majors at McGill. It roughly covers boundary value problems of various forms of the Diffusion, Wave, and Laplace's equations alongside aspects of advanced linear algebra. The official course outline is as such:
+MATH 271 is an advanced math course taken exclusively by Mechanical Engineering majors at McGill. It roughly covers boundary value problems of various forms of the Diffusion, Wave, and Laplace's equations alongside aspects of advanced linear algebra. It is comparable to an introductory undergraduate-level partial differential equations course. Here is the [official course outline](./course-outline.pdf) in the Fall 2024 semester. Part 4 "Linear Systems of Ordinary Differential and Difference Equation" was omitted in my year. It appears to have been removed when the credit load of MATH 271 was reduced to 3 from 4 around ten years ago.  
 
-**1. Partial Differential Equations**  
-The derivations of the fundamental partial differential equations governing engineering systems: fluid flow, diffusion of heat and steady state temperature distribution, electromagnetic theory and vibrations. Poisson (Laplace), Diffusion, Wave equations, Boundary conditions, uniqueness of solutions, solutions of boundary value problems using Fourier series.
+### Prerequisites
+If you are a Mechanical Engineering undergrad at McGill taking this class, MATH 263 and MATH 264 are enforced prerequisites. If you are comfortable with the content of the aforementioned classes, you should be fine.  
 
-**2. Linear Algebra**  
-Vector spaces, inner product spaces, eigenvalues and eigenvectors, Hermitian operators, Fourier expansions.
+If you are an external individual, the following is a rough list of necessary prerequsite knowledge. 
+- **Multivariable & Vector Calculus**  
+  You should be comfortable with partial derivatives, multiple integrals, gradients, the Laplacian operator, and infinite series (particularly Fourier series). Knowledge of vector calculus, namely divergence, curl, flux, line and surfance integrals, scalar & vector fields, Gauss' theorem, and common vector identities is highly reccomended.  
+  
+- **Differential Equations:**  
+  Knowledge of first-order and second-order ODEs are essential. You should be able to solve first-order ODEs using seperation of variables and integrating factors. You should be able to solve second-order constant coefficient and Euler-Cauchy ODEs. Understanding how the method of undetermined coefficients and variation of parameters works is also useful but not explicitly tested. Higher order constant coefficient ODEs may appear. Seperation of variables is a reoccuring theme, and you should be very comfortable with it.  
 
-**3. Sturm-Liouville Theory**  
-Applications and solutions of boundary value problems in spherical and cylindrical coordinates, Legendre polynomials and Bessel functions, generalizations.
+- **Linear Algebra:**  
+  Familiarity with matrix algebra, determinants, and row reduction is useful, alongside the concepts of linear dependence and independence. An understanding on what eigenvalues and eigenvectors represent will be very useful, but is not required. Likewise, concepts of vector spaces, inner products, linear operators, basis, dimension, null space, and rank are good to know, but will be reviewed.
 
-~~**4. Linear Systems of Ordinary Differential and Difference Equations**~~ (Removed after credit load was reduced from 4 to 3)     
-~~Solutions by eigenvalues and eigenvectors, as well as by diagonalization. Cayley-Hamilton theorem, functions of matrices, e<sup>AT</sup>. The exponential matrix method, solution by elimination. Applications particularly to systems of vibrating mass.~~
-
+### Outline  
+  
 My notes are split into five sections, as outlined below. Every section below has a corresponding PDF and .tex file (or will have, once I finish transcribing and uploading them). The subsections outlined here are also consistent with the subsections found in the PDF and .tex files. 
 
 **1. Partial Differential Equations in Engineering.** An introduction to the fundamental theorems governing partial differential equations. The derivations of common PDEs used in engineering and their physical interpretations. Uniqueness theorems.  
