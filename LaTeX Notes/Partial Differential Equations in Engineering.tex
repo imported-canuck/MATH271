@@ -377,7 +377,7 @@ The two functions generates two harmonics. This is common. For a well-posed prob
 
 \textbf{1. Dirichlet B.C.}
 
-Valve of $u$ is constant with time on boundary.
+Value of $u$ is constant with time on boundary.
 
 \begin{center}
 \tikzset{every picture/.style={line width=0.75pt}}
@@ -434,13 +434,13 @@ $$
 
 \textbf{Proof:} Let $\psi_{1}$ and $\psi_{2}$ be two solutions to the same problem, i.e:
 
-$\nabla^{2} \psi_{1}=-F$ and $\left.\nabla^{2} \psi_{2}=-F\right\}$\qquad Goal: Prove $\psi_{1}=\psi_{2}$ for 
+$\nabla^{2} \psi_{1}=-F$ and $\left.\nabla^{2} \psi_{2}=-F\right\}$\qquad Goal: Prove $\psi_{1}=\psi_{2}$ for Dirichlet and $\psi_{1}-\psi_{2}=c$ for Neumann
 
-either $\left[\Psi_{1}\right]_{s}=\left[\psi_{2}\right]_{s}$ (Dirichlet)\qquad Dirichlet and $\psi_{1}-\psi_{2}=c$ for 
+either $\left[\Psi_{1}\right]_{s}=\left[\psi_{2}\right]_{s}$ (Dirichlet) 
 
-or $\left[\dfrac{\partial \psi_{1}}{\partial n}\right]_{s}=\left[\dfrac{\partial \psi_{2}}{\partial n}\right]_{s}$ (Neumann)\qquad Neumann.
+or $\left[\dfrac{\partial \psi_{1}}{\partial n}\right]_{s}=\left[\dfrac{\partial \psi_{2}}{\partial n}\right]_{s}$ (Neumann)
 
-Let $U=\psi_{1}-\psi_{2}$, then $\nabla^{2} U=\nabla^{2} \psi_{1}-\nabla^{2} \psi_{2}=-F-(-F)=0$ on $\left.\tau.\right\} \text{B.C.} F=F$
+Let $U=\psi_{1}-\psi_{2}$, then $\nabla^{2} U=\nabla^{2} \psi_{1}-\nabla^{2} \psi_{2}=-F-(-F)=0$ on $\left.\tau.\right\}
 
 Either $[u]_{s}=0$ (Dirichlet) 
 or. 
@@ -449,7 +449,7 @@ $\left[\dfrac{\partial u}{\partial n}\right]_{S}=0$ (Neumann)
 
 for this to hold true.
 
-Consider $\oiint\limits_{s} u \dfrac{\partial u}{\partial n} d S=0$, this is equal to $\oiint\limits_{s} U \overrightarrow{\nabla U} \cdot \vec{n} d S \quad$ (Def.. of nabla operator).
+Consider $\oiint\limits_{s} u \dfrac{\partial u}{\partial n} d S=0$, this is equal to $\oiint\limits_{s} U \overrightarrow{\nabla U} \cdot \vec{n} d S \quad$ (Def. of nabla operator).
 
 Applying Divergence Theorem:
 
@@ -459,26 +459,25 @@ $0=\iiint\limits_{\tau} \vec{\nabla} \cdot[u \overrightarrow{\nabla u}] d \tau \
 $0=\iiint\limits_{\tau} \underbrace{\overrightarrow{\nabla u} \cdot \overrightarrow{\nabla u}}_{\|\overrightarrow{\nabla u}\|^{2}} d \tau+\iiint\limits_{\tau} u \underbrace{\nabla^{2} u}_{=0} d \tau
 $
 
-However, we may not automatically conclude $\|\overrightarrow{\nabla u}\|^{2}=0$ by Basic Lemma since $\tau$ is not arbitrary.
+However, we may not automatically conclude $\|\overrightarrow{\nabla u}\|^{2}=0$ by the Fundamental Lemma since $\tau$ is not arbitrary.
 
-Instead, we use the limit of a sum argument for integrals bc. $\|\vec{\nabla}\|^{2} \geqslant 0$.
+Instead, we use the limit of a sum argument for integrals because $\|\vec{\nabla}\|^{2} \geqslant 0$.
 
 And $\iiint\limits_{\tau} \underbrace{\|\vec{\nabla u}\|^{2}}_{\geq 0} d \tau=0 \quad$ 
-
-Note on arbitrary domains:
-
-Consider $\displaystyle\int_{\tau} x d x$. This is clearly not always zero. However, if domain $\tau=x \in[-1,1]$, then $\displaystyle\int_{-1}^{1} x d x=0$. This doesn't mean $x$ is zero, since the domain is not arbitrary. This is the definition of ``arbitrary $\tau$'' in the Fundamental Lemma. It can only be applied if the domain is arbitrary (and thus integral = 0 regardless of bounds).
 
 $\therefore\|\overrightarrow{\nabla u}\|^2=0$ in $\tau$
 
 $\therefore\overrightarrow{\nabla u}=0\quad\Rightarrow\quad u=\psi_1-\psi_2=c$ in $\tau$.
-
 
 This proves the Neumann part.
 
 For Dirichlet, we have $[u]_{s}=0$ and $[u]_{\tau}=c$
 
 Since $\tau$ can be infinitesimally close to $s$, we can't continuously go from 0 on $S$ to $c$ on $\tau$, if $c \neq 0$ $\therefore c=0 \Rightarrow \psi_{1}=\psi_{2}$, which proves Dirichelet.
+
+Note on arbitrary domains:
+
+Consider $\displaystyle\int_{\tau} x d x$. This is clearly not always zero. However, if domain $\tau=x \in[-1,1]$, then $\displaystyle\int_{-1}^{1} x d x=0$. This doesn't mean $x$ is zero, since the domain is not arbitrary. This is the definition of ``arbitrary $\tau$'' in the Fundamental Lemma. It can only be applied if the domain is arbitrary (and thus integral = 0 regardless of bounds).
 
 ``For Poisson's Equation (or Laplace's), the solution of a Robin problem is unique.
 
