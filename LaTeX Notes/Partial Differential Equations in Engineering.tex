@@ -6,6 +6,10 @@
 \usepackage{mathtools}
 \usepackage{geometry}
 \usepackage{color}
+\usepackage{cancel}
+\usepackage{hyperref}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
 \usepackage{parskip}
 \setlength{\parskip}{1em}
 \usepackage{tikz}
@@ -43,9 +47,9 @@ Then $f=0$ (take as fact).
 
 Proof by contradiction:
 
-Assume $f \neq 0$ at a point $P$. Because $f$ is continuous $f \neq 0$ in a volume $V$ surrounding $P$. (Assume $f>0$ instead of $f<0$ ).
+Assume $f \neq 0$ at a point $P$. Because $f$ is continuous, $f \neq 0$ in a volume $V$ surrounding $P$. (Assume $f>0$ instead of $f<0$ ).
 
-Thus, $\displaystyle\iint\limits_{\Delta v} f d \tau>0$ (contradiction).
+Thus, $\displaystyle\iiint\limits_{\Delta v} f d \tau>0$ (contradiction).
 
 \begin{center}
 \tikzset{every picture/.style={line width=0.75pt}}
@@ -91,7 +95,7 @@ $M=\displaystyle\iiint_{V} \delta d \tau$ where $\delta$ is density.
 $\therefore \dfrac{d M}{d t}=\dfrac{d}{d t} \displaystyle\iiint\limits_{V} \delta d \tau=\displaystyle\iiint\limits_{V} \dfrac{\partial \delta}{\partial t} d \tau$. (Leibniz integral rule: can swap derivative and integral).
 
 \begin{enumerate}
-    \item[(1)] $\displaystyle\oiint\limits_S\int\parrow{\vec{v}}{$\substack{\text{Velocity}\\\text{vector}}$}\cdot \parrowlong{\vec{n}}{$\substack{\text{unit normal}\\
+    \item[(1)] $-\displaystyle\oiint\limits_S\int\parrow{\vec{v}}{$\substack{\text{Velocity}\\\text{vector}}$}\cdot \parrowlong{\vec{n}}{$\substack{\text{unit normal}\\
     \text{vector}}$}dS=-\oiint\limits_S\delta\vec{v}\cdot \vec{n}\parrow{dS}{Surface element}$\quad (\text{hand wavey - but $m'=\delta$}).
 
     \begin{center}
@@ -108,12 +112,12 @@ $\therefore \dfrac{d M}{d t}=\dfrac{d}{d t} \displaystyle\iiint\limits_{V} \delt
 
     \item[(2)] Let $Q(\vec{r}, t)$ be the rate at which fluid is generated/(absorbed). t is time, $\vec{r}$ is the position vector. Unit of $Q$ is (ie.) $g / c c / s$.
 
-    $\therefore$ Net generation/(absorption) is.
+    $\therefore$ Net generation/(absorption) is:
 
     \item[(2)] $=\iiint_{V} Q(\vec{r}, t) d \tau$. 
 \end{enumerate}
 
-dell operator $\left(\frac{\partial F_{1}}{\partial x}+\frac{\partial F_{2}}{\partial y}+\frac{\partial F_{3}}{\partial z}\right)$.\\
+Recall definition of Del operator $\left(\frac{\partial F_{1}}{\partial x}+\frac{\partial F_{2}}{\partial y}+\frac{\partial F_{3}}{\partial z}\right)$.\\
 
 
 By the Divergence Theorem: $\displaystyle\oiint\limits_{S} \vec{F} \cdot d \vec{S}=\iiint\limits_{V} \vec{\nabla} \cdot \vec{F} d v$
@@ -128,13 +132,13 @@ $\therefore$ By Fundamental Lemma: $\dfrac{\partial \delta}{\partial t}+\vec{\na
 
 This can be further simplified if special conditions are met.
 
-If incompressible ( $\delta$ constant): $0+\delta \vec{\nabla} \cdot \vec{v}=Q. \quad \therefore \vec{\nabla} \cdot \vec{v}=Q / \delta$
+If incompressible ($\delta$ constant, $\dfrac{\partial \delta}{\partial t} = 0$): $0+\delta \vec{\nabla} \cdot \vec{v}=Q. \quad \therefore \vec{\nabla} \cdot \vec{v}=Q / \delta$
 
 If also irrotational (no swirling $\rightarrow \vec{\nabla} \times \vec{v}=\overrightarrow{0}$ )
 
-$\therefore \vec{\nabla}=\vec{\nabla} \psi\left(\dfrac{\partial \psi}{\partial x}, \dfrac{\partial \psi}{\partial y}, \dfrac{\partial \psi}{\partial z}\right).$ \quad  (curl =0)
+$\therefore \vec{\nabla}=\vec{\nabla} \psi\left(\dfrac{\partial \psi}{\partial x}, \dfrac{\partial \psi}{\partial y}, \dfrac{\partial \psi}{\partial z}\right).$ \quad  (curl = 0)
 
-* See the water flowing down a hill analogy. $\psi$= ``scalar potential''.
+* See the water flowing down a hill analogy. $\psi$ = ``scalar potential''.
 
 
 $\therefore \nabla^{2} \psi=Q / \delta$. \}``Poisson's Equation''.
@@ -171,7 +175,7 @@ Let $S$ be a closed surface bounding volume $V$:
 
 Rate of change of heat = Rate of entry/(exit) + Rate of generation/(absorption.).
 
-* Like for fluid flow.
+Like for fluid flow:
 
 $$
 (3)=(1)+(2)
@@ -200,7 +204,7 @@ $\therefore H=\iiint\limits_{\tau} c \delta \psi d \tau$ differentiate both side
 
 
 \begin{equation*}
-\therefore \dfrac{d H}{d t}=\iiint\limits_{\tau} \dfrac{\partial}{\partial t}[c \delta \psi] d \tau \tag{3}
+\therefore \dfrac{d H}{d t}=\iiint\limits_{\tau} \dfrac{\partial}{\partial t}[c \delta \psi] d \tau = (3)
 \end{equation*}
 
 
@@ -231,15 +235,15 @@ $$
 
 ($K=$ conductivity).
 
-This means that net heat exit if $\dfrac{\partial \psi}{\partial n}<0\ (\psi(P)>\psi(Q))$. Net rate of heat entry is $\oiint k \dfrac{\partial \psi}{\partial n} d s=$ (1)
+This means that net heat exit if $\dfrac{\partial \psi}{\partial n}<0\ (\psi(P)>\psi(Q))$. Net rate of heat entry is $\oiint K \dfrac{\partial \psi}{\partial n} d S=$ (1)
 
 If (1) is positive, net heat in.
 
 Solving for (2):
 
-Simply, if $Q(\vec{r}, t)$ is rate of heat generation/(absorption) as cal/c.c./sec, then:
+Simply, if $Q(\vec{r}, t)$ is rate of heat generation/(absorption) as (i.e.) cal/c.c./sec, then:
 
-Net heat gen./(abs.) is
+Net heat generation/(absorption) is
 
 $$
 (2)=\iiint\limits_{V} Q(\vec{r}, t) d \tau
@@ -247,7 +251,7 @@ $$
 
 Before combining, use Divergence Theorem on (1)
 
-$\oiint k \dfrac{\partial \psi}{\partial n} d S=\oiint  K \nabla \vec{\psi} \cdot \vec{n} d S=\iiint\limits_{V} \vec{\nabla}(K \nabla \vec{\psi}) d \tau \quad$ Triple Integral, can combine.
+$\oiint K \dfrac{\partial \psi}{\partial n} d S=\oiint  K \nabla \vec{\psi} \cdot \vec{n} d S=\iiint\limits_{V} \vec{\nabla}(K \nabla \vec{\psi}) d \tau \quad$ Triple Integral, can combine.
 
 
 \begin{equation*}
@@ -267,9 +271,9 @@ If $c, K, \delta$ all constant: $c \delta \dfrac{\partial \psi}{\partial t}-K \n
 
 $\left.\therefore \dfrac{1}{\alpha^{2}} \dfrac{\partial \psi}{\partial t}-\nabla^{2} \psi=\dfrac{Q}{K}\right\}$ ``\text{Fourier Diffusion Equation}'' ($\alpha^{2}=\dfrac{K}{\delta c}$, ``\text{diffusivity}'')
 
-If $Q=0: \dfrac{1}{\alpha^{2}} \dfrac{\partial \psi}{\partial t}-\nabla^{2} \psi=0=\left[\dfrac{1}{\alpha^{2}} \dfrac{\partial}{\partial t}-\nabla^{2}\right] \psi=0$ For a Steady State, Temperature is time  invariant. $\left(\frac{\partial}{\partial t}=0\right)$.
+If $Q=0: \dfrac{1}{\alpha^{2}} \dfrac{\partial \psi}{\partial t}-\nabla^{2} \psi=0=\left[\dfrac{1}{\alpha^{2}} \dfrac{\partial}{\partial t}-\nabla^{2}\right] \psi=0$ If in steady-state, temperature is time-invariant. $\left(\frac{\partial}{\partial t}=0\right)$.
 
-If steady state:
+If steady-state:
 
 $\left.\nabla^{2} \psi=-Q / k\right\}$ ``Poisson's Equation''
 
@@ -349,7 +353,7 @@ There are three significant PDEs that govern many engineering systems
 \end{enumerate}
 
 
-Many (but not all) DE are governed by one of there 3 equations.
+Many (but not all) PDEs are governed by one of these 3 equations.
 
 \section{Solving PDEs}
 
@@ -370,7 +374,7 @@ $\left.\begin{array}{l}
      v(x, y)=2 x y     
 \end{array}\right\}\quad \begin{array}{l}
      \nabla^{2} u=2-2=0\\
-     \nabla^{2} V=0 
+     \nabla^{2} v=0 
 \end{array}$
 
 The two functions generates two harmonics. This is common. For a well-posed problem, we need a unique solution
@@ -440,7 +444,7 @@ either $\left[\Psi_{1}\right]_{s}=\left[\psi_{2}\right]_{s}$ (Dirichlet)
 
 or $\left[\dfrac{\partial \psi_{1}}{\partial n}\right]_{s}=\left[\dfrac{\partial \psi_{2}}{\partial n}\right]_{s}$ (Neumann)
 
-Let $U=\psi_{1}-\psi_{2}$, then $\nabla^{2} U=\nabla^{2} \psi_{1}-\nabla^{2} \psi_{2}=-F-(-F)=0$ on $\tau.$
+Let $u=\psi_{1}-\psi_{2}$, then $\nabla^{2} u=\nabla^{2} \psi_{1}-\nabla^{2} \psi_{2}=-F-(-F)=0$ on $\tau.$
 
 Either $[u]_{s}=0$ (Dirichlet) 
 or. 
@@ -449,7 +453,7 @@ $\left[\dfrac{\partial u}{\partial n}\right]_{S}=0$ (Neumann)
 
 for this to hold true.
 
-Consider $\oiint\limits_{s} u \dfrac{\partial u}{\partial n} d S=0$, this is equal to $\oiint\limits_{s} U \overrightarrow{\nabla U} \cdot \vec{n} d S \quad$ (Def. of nabla operator).
+Consider $\oiint\limits_{s} u \dfrac{\partial u}{\partial n} d S=0$, this is equal to $\oiint\limits_{s} u \overrightarrow{\nabla u} \cdot \vec{n} d S \quad$ (Def. of Del operator).
 
 Applying Divergence Theorem:
 
@@ -459,9 +463,9 @@ $0=\iiint\limits_{\tau} \vec{\nabla} \cdot[u \overrightarrow{\nabla u}] d \tau \
 $0=\iiint\limits_{\tau} \underbrace{\overrightarrow{\nabla u} \cdot \overrightarrow{\nabla u}}_{\|\overrightarrow{\nabla u}\|^{2}} d \tau+\iiint\limits_{\tau} u \underbrace{\nabla^{2} u}_{=0} d \tau
 $
 
-However, we may not automatically conclude $\|\overrightarrow{\nabla u}\|^{2}=0$ by the Fundamental Lemma since $\tau$ is not arbitrary.
+However, we may not automatically conclude $\|\overrightarrow{\nabla u}\|^{2}=0$ by the Fundamental Lemma since $\tau$ is not arbitrary. Why is it not arbitrary? We have restricted our analysis to Dirichlet or Neumann B.C.s, rather than \textit{any} boundary conditions. 
 
-Instead, we use the limit of a sum argument for integrals because $\|\vec{\nabla}\|^{2} \geqslant 0$.
+Instead, we use the limit of a sum argument for integrals because $\|\overrightarrow{\nabla u}\|^{2} \geqslant 0$.
 
 And $\iiint\limits_{\tau} \underbrace{\|\vec{\nabla u}\|^{2}}_{\geq 0} d \tau=0 \quad$ 
 
@@ -473,7 +477,7 @@ This proves the Neumann part.
 
 For Dirichlet, we have $[u]_{s}=0$ and $[u]_{\tau}=c$
 
-Since $\tau$ can be infinitesimally close to $s$, we can't continuously go from 0 on $S$ to $c$ on $\tau$, if $c \neq 0$ $\therefore c=0 \Rightarrow \psi_{1}=\psi_{2}$, which proves Dirichelet.
+Since $\tau$ can be infinitesimally close to $s$, we can't continuously go from 0 on $S$ to $c$ on $\tau$, if $c \neq 0$ $\therefore c=0 \Rightarrow \psi_{1}=\psi_{2}$, which proves the Dirichlet case.
 
 Note on arbitrary domains:
 
@@ -490,21 +494,33 @@ $\dfrac{\partial \psi_{1}}{\partial n}+h \psi_{1}=\dfrac{\partial \psi_{2}}{\par
 Let $u=\psi_{1}-\psi_{2}$, then $\nabla^{2} u=0$ in $\tau$.
 
 $$
-\dfrac{\partial}{\partial n}\left(\psi_{1}-\psi_{2}\right)+h\left(\psi_{1}-\psi_{2}\right)=0 \text { or } \frac{\partial u}{\partial n}+h u=0 \text { on } s .
+\dfrac{\partial}{\partial n}\left(\psi_{1}-\psi_{2}\right)+h\left(\psi_{1}-\psi_{2}\right)=0 \text { or } \frac{\partial u}{\partial n}+h u=0 \text { on } S .
 $$
 
-Now, $\oiint\limits_{s} u \dfrac{\partial u}{\partial n} d S=-\oiint\limits_{s} h u^{2} d S \quad\left(b c \cdot \frac{\partial u}{\partial n}=-h u\right)$
+Now, $\oiint\limits_{s} u \dfrac{\partial u}{\partial n} d S=-\oiint\limits_{s} h u^{2} d S \quad\left(\frac{\partial u}{\partial n}=-h u\right)$
 
 $$
-=\oiint_{s} u \overrightarrow{\nabla u} \cdot \stackrel{\rightharpoonup}{n} d S \underset{\text { Theorem }}{\substack{\text { Divergence }}} \iiint_{\tau} \vec{\nabla} \cdot(u \overrightarrow{\nabla u}) d \tau
+=\oiint_{s} u \overrightarrow{\nabla u} \cdot \stackrel{\rightharpoonup}{n} d S \Rightarrow\iiint_{\tau} \vec{\nabla} \cdot(u \overrightarrow{\nabla u}) d \tau \text { (by the Divergence Theorem) }
+$$
+
+$$
+\therefore -\oiint_{S} h\,u^{2} \, dS 
+= \iiint_{\tau} \nabla \cdot \bigl(u\,\nabla u\bigr)\, d\tau
+= \iiint_\tau 
+  \underbrace{\nabla u \cdot \nabla u}_{\|\nabla u\|^2 \geqslant 0} 
+  \, d\tau.
++ \cancel{\iiint_{\tau} u\,\nabla^{2}u \, d\tau}
+\text{ (Poisson problem: } \nabla^{2}u = 0\text{) }
 $$
 
 Only way for L.H.S. = R.H.S. is if both are $0$.
 
+The gist of this proof is that the L.H.S. $\leqslant 0$ and the R.H.S. is $\geqslant 0$. The only way for this to be possible is if L.H.S = R.H.S. = 0.
+
 $\iiint\limits_{\tau}\|\overrightarrow{\nabla u}\|^{2} d \tau=0 \Rightarrow u=$ constant in $\tau$.
 
 $$
-\oiint_{s} \underbrace{h u^{2}}_{\geqslant 0} d s=0 \Rightarrow u=0 \text { on } s.
+\oiint_{S} \underbrace{h u^{2}}_{\geqslant 0} d S=0 \Rightarrow u=0 \text { on } S.
 $$
 
 Hence by continuity, $u=\psi_{1}-\psi_{2}=0$, thus $\psi_{1}=\psi_{2}$.
