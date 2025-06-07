@@ -1,7 +1,7 @@
 # MATH 271
 Collection of my notes in Professor Charles Roth's MATH 271 "Linear Algebra and Partial Differential Equations" course at McGill. Taken in F2024. Both the .tex code and rendered PDFs can be found in their respective folders.  
 
-All done! see [full PDF](./main.pdf) and [full LaTeX code](./main.tex) 
+All done! see [full PDF](./Notes.pdf) and [full LaTeX code](./Notes.tex) 
 
 ## Contents  
 MATH 271 is an advanced math course taken exclusively by Mechanical Engineering majors at McGill. It roughly covers boundary value problems of various forms of the Diffusion, Wave, and Laplace's equations alongside aspects of advanced linear algebra. It is comparable to an introductory undergraduate-level partial differential equations course. Here is the [official course outline](./Course%20Outline.pdf) in the Fall 2024 semester. Part 4: "Linear Systems of Ordinary Differential and Difference Equations" was omitted in my year. It appears to have been removed when the credit load of MATH 271 was reduced to 3 from 4 around ten years ago.  
