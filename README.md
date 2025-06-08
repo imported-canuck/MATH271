@@ -21,7 +21,7 @@ If you are an external individual, the following is a rough list of necessary pr
 
 ### Outline  
   
-My notes are split into five sections, as outlined below. Every section below has a corresponding PDF and .tex file (or will have, once I finish transcribing and uploading them). The subsections outlined here are also consistent with the subsections found in the PDF and .tex files. 
+My notes are split into five sections, as outlined below. The chapters in my notes align with the sections and subsections. 
 
 **1. Partial Differential Equations in Engineering.** An introduction to the fundamental theorems governing partial differential equations. The derivations of common PDEs used in engineering and their physical interpretations. Uniqueness theorems.  
 &nbsp;&nbsp;&nbsp;&nbsp;1.1. Fundamental Lemma of PDEs  
@@ -71,7 +71,9 @@ My notes are split into five sections, as outlined below. Every section below ha
 **5. Sturm-Liouville Boundary Value Problems.**  Conditions and consequences of the Strum-Liouville theorem. Solutions of boundary value problems in cylindrical and spherical coordinates using the Sturm-Liouville theorem. Legendre polynomials and Bessel functions.  
 &nbsp;&nbsp;&nbsp;&nbsp;5.1. Introduction to Sturm-Liouville Equations  
 &nbsp;&nbsp;&nbsp;&nbsp;5.2. Sturm-Liouville Theorem  
-&nbsp;&nbsp;&nbsp;&nbsp;5.3. Sturm-Liouville BVPs  
+&nbsp;&nbsp;&nbsp;&nbsp;5.3. Examples of Sturm–Liouville BVPs  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.3.1. The Simple Dirichlet–Dirichlet Case  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.3.2. A Mixed Boundary-Value Problem (Robin at x = π)    
 &nbsp;&nbsp;&nbsp;&nbsp;5.4. Legendre Polynomials  
 &nbsp;&nbsp;&nbsp;&nbsp;5.5. BVP 9: Steady-State Temperature in Spherical Regions  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.5.1 BVP 9a: Interior of a Sphere  
